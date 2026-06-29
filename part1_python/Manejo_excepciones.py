@@ -1,4 +1,4 @@
-# MANEJO DE EXCEPCIONES------------------------------------------
+# MANEJO DE EXCEPCIONES---------------------------------------------
 
 try: #bloque de codigo que podria tener error en int
     nom=input("Hola usuario ingresa tu nombre: ")

@@ -1,4 +1,4 @@
-#MANEJO DE ARCHIVOS-------------------------------------
+#MANEJO DE ARCHIVOS----------------------------------------
 
 with open("README.md", "w") as f: #cierra el archivo al terminar(with) la abertura de rEADME.md(open) que fue creado o sobrescritro(w) del archivo(f)
     f.write("Readme describe el app del taller\n")   #despues de abrir el archivo se escribe en el archivo con write() lo que se quiere escribir en el archivo

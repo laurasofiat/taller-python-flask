@@ -1,4 +1,4 @@
-#FUNCIONES-----------------------------
+#FUNCIONES--------------------------------
 
 
 n=input("Ingrese su nombre: ")

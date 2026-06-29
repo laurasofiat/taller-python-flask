@@ -1,4 +1,4 @@
-#CICLOS---------------------------------------------------------------
+#CICLOS-----------------------------------------------------------------
 
 t=0  #variable tipo int
 v1=int(input("Hola, suma conmigo. Ingrese un número entero:")) #interacion par ingresar numero
