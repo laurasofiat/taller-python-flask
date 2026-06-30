@@ -16,3 +16,5 @@ Explicación de cada elemento del archivo .gitignore
 - .DS_Store: ignora un archivo oculto creado automáticamente por macOS para almacenar información sobre la visualización de carpetas. No es necesario para el funcionamiento del proyecto. 
 -->
 
+
+
