@@ -1,13 +1,13 @@
 #sqlite y flask----------------------------------------------------------------------------------------------------
 
 import sqlite3 #se importa la libreria para bd
-from flask import Flask, render_template, request #se importa flask y render_template para renderizar html y request para recibir datos del formulario
+from flask import Flask, render_template, redirect, url_for, request #se importa flask y render_template para renderizar html y request para recibir datos del formulario
 
 app = Flask(__name__) #se crea con flask el app
 
 @app.route('/')
 def registro():
-    return render_template('index.html')
+    return redirect(url_for('registros'))
 
 def conectar(): #funcion conectar
     conn = sqlite3.connect("usuarios.db") #coecta a la base de datos usuarios.db
@@ -36,6 +36,3 @@ def registros(): #funcion registro
     conn.close() #cierra la conexion
 
     return render_template("registros.html", datos=datos) #redige a registro.html y envia los datos obtenidos de la base de datos
-
-
-
