@@ -5,7 +5,7 @@ nom_usuario=input("Ingrese nombre de ususario:") #interacion para nombre
 x=input("¿Tu edad es menor a 18?:") #interacion para respuesta
 if x=="si": #si edad es menor a 18
     print(nom_usuario,"No cumple con los requisitos.") #imprime
-    print("Puede hacer procesos de crédito.")
+    print("No Puede hacer procesos de crédito.")
 else: print(nom_usuario,"Sí cumple con los requisitos.")
             
 edad=int(input("Ingrese su edad:")) #interacion para edad
