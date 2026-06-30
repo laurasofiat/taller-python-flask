@@ -145,7 +145,7 @@ python final_proyect/app.py
 
 ## Proyecto final: Patrimonio Cultural Colombiano
 
-El proyecto final, ubicado en `final_proyect`, es un catálogo que permite registrar y consultar elementos representativos de la cultura colombiana: fiestas, danzas, gastronomía, música, artesanías y sitios arqueológicos, clasificados por región. Cuenta con tres rutas (inicio, agregar y catálogo), un formulario con validación, y una base de datos SQLite donde se guarda toda la información.
+El proyecto final, ubicado en `final_proyect`, es un catálogo que permite registrar elementos culturales que representan y resaltan a colombia: fiestas, danzas, gastronomía, música, artesanías y sitios arqueológicos, clasificados por región. Cuenta con tres rutas (inicio, agregar y catálogo), un formulario con validación, y una base de datos SQLite donde se guarda toda la información.
 
 ## Objetivo
 El objetivo de este proyecto es el trabajo que fortalece los conocimientos fundamentales de Python y Flask mediante el desarrollo de ejemplos prácticos, comprendiendo el funcionamiento de aplicaciones web, el manejo de bases de datos y el control de versiones con Git.
