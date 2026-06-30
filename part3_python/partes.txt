@@ -1,0 +1,70 @@
+entorno virtual------------------------------------------------------------------------------------
+crear un entorno virtual: python -m venv .venv
+
+activar el entorno virtual (Windows): venv\Scripts\activate
+
+instalar Flask: pip install flask
+
+generar el archivo requirements.txt: pip freeze > requirements.txt
+
+explicación:
+- python -m venv .venv: crea un entorno virtual para el proyecto.
+- activate: activa el entorno virtual para trabajar de forma aislada.
+- pip install flask: instala Flask dentro del entorno virtual.
+- pip freeze > requirements.txt: guarda las dependencias del proyecto en un archivo.
+
+git---------------------------------------------------------------------------------------------------
+
+inicializar un repositorio git: git init
+
+agregar archivos al área de preparación: git add .
+
+guardar los cambios: git commit -m "Primer commit"
+
+ver el estado del repositorio: git status
+
+ver el historial de commits: git log
+
+explicación:
+- git init: crea un repositorio Git para comenzar el control de versiones.
+- git add .: agrega todos los archivos al área de preparación.
+- git commit -m "Primer commit": guarda los cambios realizados en el repositorio.
+- git status: muestra el estado actual de los archivos del proyecto.
+- git log: muestra el historial de commits realizados.
+
+github------------------------------------------------------------------------------------------------
+
+conectar el repositorio local con GitHub: git remote add origin https://github.com/usuario/nombredelrepo.git
+
+subir los cambios al repositorio remoto: git push -u origin main
+
+explicación :
+- git remote add origin: vincula el repositorio local con el repositorio remoto de GitHub.
+- git push -u origin main: envía los commits del repositorio local a GitHub.
+
+
+#estructura de proyecto----------------------------------------------------------
+
+Proyecto/
+       app.py
+       requirements.txt
+       README.md
+       .gitignore
+       static/
+              index.css
+              logo.png
+
+       templates/
+              base.html
+              index.html
+              registro.html
+
+
+explicación :
+- app.py: archivo principal donde se configura la aplicación Flask y se definen las rutas.
+- templates/: contiene las plantillas HTML utilizadas por la aplicación.
+- static/: almacena archivos estáticos como hojas de estilo CSS, imágenes y archivos JavaScript.
+- requirements.txt: guarda todas las dependencias necesarias para ejecutar el proyecto.
+- README.md: describe el proyecto, sus características y cómo instalarlo.
+- .gitignore: especifica los archivos y carpetas que Git no debe incluir en el repositorio.
+
