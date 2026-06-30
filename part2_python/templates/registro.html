@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    </head>
+        <body>
+        {% if error %} <!--si da error-->
+            <p>{{ error }}</p> <!--muestra la variable definida en la funcion registro-->
+        {% endif %} <!--finaliza la condicion-->
+
+        <form method="POST" action="/registro"> <!--en el formulario se crea y envian los datos a la ruta registro-->
+            <input type="text" name="nombre" placeholder="Tu nombre" required> <!--name es el nombre de la clave de flask - en el campo de almacenaimeto debe ser llenado-->
+            <input type="email" name="email" placeholder="Tu email" required> 
+            <button type="submit">Registrar</button>
+        </form>
+    </body>
+</html>

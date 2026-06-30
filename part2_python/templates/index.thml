@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>{{titulo}}</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    </head>
+    <body>
+        <h1>{{titulo}}</h1>  <!--pone en un titulo tamaño grande la variable titulo de la funcion index-->
+        {% for c in contenido%} <!--recorre la lista-->
+            <li> 
+                {% if contenido != " "%} <!-- si esta vacio --> 
+                    {{c.subtitulo }} <!--muestra el subtitulo-->
+                    {{c.texto}} <!--muestra el texto-->
+            </li>
+    </body>
+</html>

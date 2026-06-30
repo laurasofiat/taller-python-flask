@@ -1,0 +1,17 @@
+{% extends "base.html" %} <!-- hereda la estructura de base.html -->
+
+{% block titulo %}Registro{% endblock %} <!-- rellena el <title> -->
+
+{% block content %} <!-- todo esto va dentro del <body> de base.html -->
+
+    {% if error %}
+        <p>{{ error }}</p>
+    {% endif %}
+
+    <form method="POST" action="/registro">
+        <input type="text"   name="nombre" placeholder="Tu nombre" required>
+        <input type="email"  name="email"  placeholder="Tu email"  required>
+        <button type="submit">Registrar</button>
+    </form>
+
+{% endblock %}
