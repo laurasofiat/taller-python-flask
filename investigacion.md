@@ -105,7 +105,7 @@ Agrega la importancia de cada punto sin modicar algo no requerido: ¡Hola! Aquí
 
 * **Método `__init__`:** Es el constructor de la clase. Se ejecuta automáticamente cada vez que creas un nuevo objeto (instancia) y sirve para definir sus datos iniciales.
 
-* **Atributos de instancia y `self`:** `self` representa al objeto específico que se está creando. Los atributos son las variables que pertenecen a ese objeto (como `self.nombre`).
+* **Atributos de instancia y `self`:** `self` representa al objeto específico que se está creando. Los atributos son las variables que pertenecen a ese objeto (como `self.nombre`)
 
 
 
