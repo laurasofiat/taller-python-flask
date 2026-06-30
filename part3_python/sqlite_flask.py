@@ -36,3 +36,6 @@ def registros(): #funcion registro
     conn.close() #cierra la conexion
 
     return render_template("registros.html", datos=datos) #redige a registro.html y envia los datos obtenidos de la base de datos
+
+if __name__=='__main__':
+    app.run(debug=True)
