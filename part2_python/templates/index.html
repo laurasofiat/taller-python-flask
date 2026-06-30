@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{{ titulo }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+</head>
+
+<body>
+    <h1>{{ titulo }}</h1>
+
+    {% for c in contenido %}
+        <li>
+            {% if c.texto %}
+                <h2>{{ c.subtitulo }}</h2>
+                <p>{{ c.texto }}</p>
+            {% endif %}
+        </li>
+    {% endfor %}
+</body>
+</html>
