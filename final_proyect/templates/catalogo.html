@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block titulo %}Catálogo{% endblock %}
+
+{% block content %}
+    <h2>Catálogo de patrimonio cultural</h2>
+
+    <p><a href="{{ url_for('agregar') }}">Agregar nuevo elemento</a></p>
+
+    {% if culturas %} <!-- si hay campos en culturas-->
+        <table> <!-- tabla-->
+            <tr> <!--column-->
+                <th>Nombre</th>
+                <th>Región</th>
+                <th>Tipo</th>
+                <th>Descripción</th>
+            </tr>
+            {% for c in culturas %} <!-- recorre los diccionarios -->
+            <tr>
+                <td>{{ c.nombre }}</td>
+                <td>{{ c.region }}</td>
+                <td>{{ c.tipo }}</td>
+                <td>{{ c.descripcion }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    {% else %} <!-- si no hay dtos -->
+        <p>Todavía no hay elementos registrados.</p> <!-- muestra mensaje -->
+    {% endif %}
+{% endblock %}
+

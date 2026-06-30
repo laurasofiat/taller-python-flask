@@ -1,0 +1,12 @@
+{% extends "base.html" %} 
+
+{% block titulo %}{{ titulo }}{% endblock %} <!-- La cultura colombiana -->
+
+{% block content %} <!-- en base pone -->
+    <h2>Bienvenido</h2>
+    <p>Este catálogo reúne fiestas, danzas, comidas y sitios representativos de la cultura colombiana. Actualmente hay {{ total }} elemento(s) registrados.</p>
+
+    <p><a href="{{ url_for('agregar') }}">Agregar un nuevo elemento cultural</a></p>
+    <p><a href="{{ url_for('catalogo') }}">Ver catálogo completo</a></p>
+{% endblock %}
+

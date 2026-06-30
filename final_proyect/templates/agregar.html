@@ -1,0 +1,29 @@
+{% extends "base.html" %} <!-- reemplaza block -->
+
+{% block titulo %}Agregar elemento cultural{% endblock %}
+
+{% block content %} 
+    <h2>Agregar elemento cultural</h2>
+
+    {% if error %} <!-- si hay error -->
+        <p class="error">{{ error }}</p> 
+    {% endif %}
+
+    <form method="POST" action="{{ url_for('agregar') }}">
+        <input type="text" name="nombre" placeholder="Nombre (ej. Vallenato)" required>
+        <input type="text" name="region" placeholder="Región (ej. Caribe)" required>
+        <select name="tipo" required>
+            <option value="">Selecciona un tipo</option>
+            <option value="Fiesta">Fiesta</option>
+            <option value="Danza">Danza</option>
+            <option value="Gastronomía">Gastronomía</option>
+            <option value="Música">Música</option>
+            <option value="Artesanía">Artesanía</option>
+            <option value="Sitio arqueológico">Sitio arqueológico</option>
+            <option value="Otro">Otro</option>
+        </select>
+        <textarea name="descripcion" placeholder="Breve descripción" rows="4" required></textarea>
+        <button type="submit">Guardar</button>
+    </form>
+{% endblock %}
+
