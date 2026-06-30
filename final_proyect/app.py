@@ -61,9 +61,9 @@ def agregar():
 @app.route("/catalogo") #ruta catalogo
 def catalogo(): #funcion
     conn = conectar() #conecta abd
-    patrimonios = conn.execute("SELECT * FROM culturas ORDER BY region").fetchall() #selecciona todo de bd por orden de bd
+    culturas = conn.execute("SELECT * FROM culturas ORDER BY region").fetchall() #selecciona todo de bd por orden de bd
     conn.close() #cierra conexion
-    return render_template("catalogo.html", patrimonios=patrimonios) #redirige a catalogo con info
+    return render_template("catalogo.html", culturas=culturas) #redirige a catalogo con info
 
 if __name__ == "__main__":
     app.run(debug=True) #core app
