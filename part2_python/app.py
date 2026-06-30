@@ -121,6 +121,9 @@ def buscar():
 
 # {% endblock %}
 
+@app.route("/base_hijo")
+def base_hijo():
+    return render_template("base_hijo.html")
 
 #redireccionamiento y url---------------------------------------------------------------------------------------------------------------------
 
